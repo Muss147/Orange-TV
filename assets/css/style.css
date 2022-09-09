@@ -2,16 +2,45 @@ body {
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 700;
+    font-size: 24px;
     line-height: 24px;
     color: #FFFFFF;
 }
 
-h1 {
+h1, h2, h3 {
     font-weight: 700;
-    font-size: 77px;
-    line-height: 94px;
+}
+h1 {
+    font-size: 5.347vw;
+    line-height: 6.528vw;
+}
+h2 {
+    font-size: 42px;
+    line-height: 51px;
+}
+h3 {
+    font-size: 40px;
+    line-height: 100%;
 }
 
+.title {
+    position: relative;
+}
+.title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 50%;
+    background-color: #FF6600;
+}
+header .navbar {
+    box-shadow: unset;
+}
+.navbar-nav, .nav-link {
+    font-size: unset;
+}
 .owl-carousel {
     position: relative;
 }
@@ -23,9 +52,45 @@ h1 {
     height: 30%;
     background: linear-gradient(to top, #000000c9 50%, transparent);
 }
+.owl-carousel .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.owl-carousel button.owl-dot {
+    background: white;
+    border-radius: 50px;
+    color: white;
+    padding: 7px!important;
+    margin: 20px 10px;
+}
+.owl-carousel button.owl-dot.active {
+    background: #FF6600;
+}
 
+body.bg-white .owl-carousel button.owl-dot {
+    border: 2px solid #000;
+}
+body.bg-white .owl-carousel button.owl-dot.active {
+    border: unset;
+}
+body.bg-white .owl-item img:not(.owl-item.active.center img) {
+    height: 333px;
+    margin-top: 40px;
+}
 @media (min-width: 768px) {
     .w-md-75 {
         max-width: 75% !important;
+    }
+}
+@media (max-width: 768px) {
+    h2 {
+        font-size: 26px;
+        line-height: 29px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 100%;
     }
 }
