@@ -47,8 +47,8 @@
           </div>
         </div>
       </section>
-      <section class="my-5 py-5">
-        <div class="owl-carousel">
+      <section class="my-5 pt-5">
+        <div class="owl-carousel series">
           <a href=""><img src="../assets/brand/series/uneFamillePasSiParfaite.png" alt="Une Famille Pas Si Parfaite" height="402px" style="object-fit: cover; object-position: top"></a>
           <a href=""><img src="../assets/brand/series/amourOcean.png" alt="Amour Ocean" height="402px" style="object-fit: cover; object-position: top"></a>
           <a href=""><img src="../assets/brand/series/mmeFazilet.png" alt="Mme Fazilet et ses Filles" height="402px" style="object-fit: cover; object-position: top"></a>
@@ -75,6 +75,79 @@
             <h2 class="text-center text-lg-end">Plus de 35 chaines et <br>900 vidéos pour toute la famille</h2>
           </div>
           <div class="col-lg d-block d-lg-none"><img src="../assets/brand/series/capture2.png" alt="Capture 2" width="100%" height="auto" style="object-fit: cover"></div>
+        </div>
+      </section>
+      <section class="container my-5 pt-5">
+        <center class="mb-5">
+          <h2>Des pass adaptés à vos envies</h2>
+        </center>
+        <ul class="nav nav-tabs nav-tabs-light mt-0 border-0 justify-content-around">
+            <li class="nav-item">
+              <a class="nav-link px-0 active" id="nav-linkA" href="#linkA" data-bs-toggle="tab" data-bs-target="#linkA" role="tab" aria-current="page"><h3 class="fw-normal m-0">Pass Nollywood</h3></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0" id="nav-linkB" href="#linkB" data-bs-toggle="tab" data-bs-target="#linkB" role="tab"><h3 class="fw-normal m-0">Pass TV live + RTI</h3></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0" id="nav-linkC" href="#linkC" data-bs-toggle="tab" data-bs-target="#linkC" role="tab"><h3 class="fw-normal m-0">Pass Canal+</h3></a>
+            </li>
+        </ul>
+        <div class="tab-content border-0" id="nav-tabs-light-content">
+            <div class="tab-pane py-4 fw-normal fade show active" id="linkA" role="tabpanel" aria-labelledby="nav-linkA">
+                <p>Nos pass TV Basique + RTI, vous offrent un accès direct au <br>bouquet de chaînes live sur votre mobile à partir de 350 FCFA.</p>
+                <div class="row mt-5">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="bg-info p-3 mb-2">
+                            <h3>350 <small class="fw-normal">FCFA</small></h3>
+                            <strong>
+                                Pass Jour<br>
+                                Sans engagement
+                            </strong>
+                        </div>
+                        <div class="border border-primary p-3 fs-5">
+                            <ul>
+                                <li><strong>Validité : </strong>24h</li>
+                                <li><strong>Souscription via l'appli, cliquer ici pour télécharger : </strong>« Google Play » ou « Apple Store »</li>
+                                <li><strong>Code souscription : </strong>#101*4#</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="bg-info p-3 mb-2">
+                            <h3>1 250 <small class="fw-normal">FCFA</small></h3>
+                            <strong>
+                                Pass Semaine<br>
+                                Sans engagement
+                            </strong>
+                        </div>
+                        <div class="border border-dark p-3 fs-5">
+                            <ul>
+                                <li><strong>Validité : </strong>7 jours</li>
+                                <li><strong>Souscription via l'appli, cliquer ici pour télécharger : </strong>« Google Play » ou « Apple Store »</li>
+                                <li><strong>Code souscription : </strong>#101*4#</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="bg-info p-3 mb-2">
+                            <h3>3 000 <small class="fw-normal">FCFA</small></h3>
+                            <strong>
+                                Pass Mois<br>
+                                Sans engagement
+                            </strong>
+                        </div>
+                        <div class="border border-light p-3 fs-5">
+                            <ul>
+                                <li><strong>Validité : </strong>30 jours</li>
+                                <li><strong>Souscription via l'appli, cliquer ici pour télécharger : </strong>« Google Play » ou « Apple Store »</li>
+                                <li><strong>Code souscription : </strong>#101*4#</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane py-4 fw-normal" id="linkB" role="tabpanel" aria-labelledby="nav-linkB">Content of Link B</div>
+            <div class="tab-pane py-4 fw-normal" id="linkC" role="tabpanel" aria-labelledby="nav-linkC">Content of Link C</div>
         </div>
       </section>
       <section class="container my-5 py-5">
@@ -146,34 +219,46 @@
     <!-- owl carousel -->
     <script src="../assets/plugins/owl.carousel.min.js"></script>
     <script type="text/javascript">
-      $(".owl-carousel").owlCarousel({
-        loop:true,
-        dots: true,
-        center: true,
-        autoplay: true,
-        autoplayTimeout: 7000,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 1,
-            center: false
-          },
-          376: {
-            items: 1.5,
-            center: false
-          },
-          768: {
-            items: 2.5,
-            center: false
-          },
-          978: {
-            items: 3,
-          },
-          1500: {
-            items: 3.5,
-          },
-        }
-      });
+        $(".owl-carousel.series").owlCarousel({
+            nav: true,
+            dots: false,
+            loop:true,
+            center: true,
+            //autoplay: true,
+            autoplayTimeout: 7000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    center: false,
+                    dots: false
+                },
+                376: {
+                    items: 1.5,
+                    center: false,
+                    dots: false
+                },
+                768: {
+                    items: 2.5,
+                    center: false,
+                    dots: false
+                },
+                978: {
+                    items: 3,
+                    dots: false
+                },
+                1500: {
+                    items: 3.5,
+                    dots: false
+                },
+            }
+        })
+        .on('initialized.owl.carousel', function() {
+            $('.owl-nav').removeClass('disabled');
+        })
+        .on('changed.owl.carousel', function(event) {
+            $('.owl-nav').removeClass('disabled');
+        });
     </script>      
   </body>
 </html>
