@@ -107,8 +107,15 @@ header .navbar {
     .group9 img {
         margin-right: -50%;
     }
+    .justify-content-md-start {
+        justify-content: start !important;
+    }
 }
 @media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
     h2 {
         font-size: 26px;
         line-height: 29px;
